@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+
+:root{
+
+  /* colors */
+  --primary : #633cff;
+  --secondary:#ffffff;
+  --primary-light: #beadff;
+  --primary-bg: #fafafa;
+
+  --text-primary: #333333;
+  --text-secondary: #737373;
+  --border-color: #d9d9d9;
+  --background-light: #efebff;
+
+  --error: #ff3939;
+
+  /* topography */
+
+  --font-primary:"Instrument Sans",sans-serif;
+  
+  /* HM-heading M,HS-Heading S,BM-Body M.. */
+  --font-size-HM:32px;
+  --font-size-HS:16px;
+  --font-size-BM:16px;
+  --font-size-BS:12px;
+
+  --font-weight-heading:600;
+  --font-weight-body:400;
+
+/* interactive elements */
+--input-border-default:var(--border-color);
+--input-border-focus: var(--primary);
+--input-border-error:var(--error);
+
+--button-bg-primary-default:var(--primary);
+--button-bg-primary-active:var(--primary-light);
+--button-bg-primary-disabled:#d4cafb;
+--button-bg-secondary-default:transparent;
+--button-bg-secondary-active:var(--background-light);
+--button-bg-secondary-disabled:transparent;
+
+--button-text-color-primary:var(--secondary);
+--button-text-color-secondary:var(--primary);
+--button-text-color-secondary-default:var(--border-color);
+
+--button-border-primary:none;
+--button-border-primary-secondary:var(--primary);
+--button-border-color-secondary-default:var(--border-color);
+
+}
+.section{
+  border: yellow 1px solid;
+}
+.login-container{
+  border: red 1px solid;
+}
