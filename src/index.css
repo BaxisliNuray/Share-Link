@@ -51,9 +51,48 @@
 --button-border-color-secondary-default:var(--border-color);
 
 }
-.section{
-  border: yellow 1px solid;
+body{
+  background-color: var(--primary-bg);
 }
-.login-container{
-  border: red 1px solid;
+.container{
+  
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 20px;
+  
+}
+.cont{
+  width: 100%;
+  border: 1px solid blue;
+  
+}
+
+.faLink{
+  font-size: 40px;
+border-radius: 15px;
+padding: 5px;
+color: var(--secondary);
+background-color: var(--primary);
+}
+.head_text h2{
+font-size: 48px;
+font-weight: var(--font-weight-heading);
+}
+
+.head_text p{
+  font-size: 18px;
+  padding: 5px 0;
+  color: var(--text-secondary);
+}
+
+.form_container{
+  background-color: var(--secondary);
+ border-radius: 10px;
+ 
+ }
+ 
+ input:focus {
+  border-color: var(--primary);
+  background-color: #f0f8ff;
+  outline: none; 
 }
