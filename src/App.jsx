@@ -13,6 +13,7 @@ function App() {
         <Route path="/" element={<Login/>}/>
         <Route path="/register" element={<Account/>}/>
         <Route path="/devlink" element={<Devlink/>}/>
+        
       </Routes>
     </BrowserRouter>
   )

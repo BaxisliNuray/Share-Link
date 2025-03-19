@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import '../index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
@@ -8,6 +9,8 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
+
+  const navigate = useNavigate(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,9 +23,10 @@ const Login = () => {
     if (email === storedEmail && password === storedPassword) {
       alert("Login successful!");
       setErrorMessage(""); 
+
+      navigate("/devlink");  
     } else {
       setErrorMessage("Invalid credentials. Please try again.");
-      
       setEmailError(email !== storedEmail);
       setPasswordError(password !== storedPassword);
     }
@@ -106,7 +110,7 @@ const Login = () => {
 
         <p className="mt-10 text-center text-sm/6 text-gray-500">
           Don't have an account?{' '}
-          <Link to="/register" className="font-semibold text-indigo-600 hover:text-indigo-500">
+          <Link to="/devlink" className="font-semibold text-indigo-600 hover:text-indigo-500">
             Create account
           </Link>
         </p>
